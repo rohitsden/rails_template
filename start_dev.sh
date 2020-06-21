@@ -1,0 +1,1 @@
+export APP_NAME=appname && export DATA_LOCATION=./tmp/data && export DB_LOCATION=./tmp/db && export DEPLOYMENT_STAGE=development && export POSTGRES_PASSWORD=appname && docker-compose up

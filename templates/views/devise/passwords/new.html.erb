@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 text-center" style="margin-top:20%">
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+        <%= image_tag "logo"%>
+        <h5>Forgot your password?</h5>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", :class=>"form-control", :placeholder=>"Email address" %>
+        <%= f.submit "Send Instructions", :class=>"btn btn-primary btn-block mt-2 mb-1" %>
+        <%= render "devise/shared/links" %>
+        <p class="mt-3 mb-3 text-muted">&copy; 2020</p>
+      <% end %>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>
