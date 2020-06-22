@@ -4,7 +4,7 @@
     <div class="col-4 text-center" style="margin-top:20%">
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
-        <%= image_tag "logo"%>
+        <%= image_tag "logo" , :class=>"mb-3"%>
         <h5>Forgot your password?</h5>
         <label for="inputEmail" class="sr-only">Email address</label>
         <%= f.email_field :email, autofocus: true, autocomplete: "email", :class=>"form-control", :placeholder=>"Email address" %>
