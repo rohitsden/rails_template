@@ -12,6 +12,7 @@ mv ./templates/css/application.css ./app/assets/stylesheets/application.css
 rm ./app/assets/stylesheets/application.scss
 rm -rf ./app/views/devise
 mv ./templates/views/devise ./app/views/devise
+mv ./templates/config/development.rb ./config/environments/development.rb
 mv ./templates/images/logo.png ./app/assets/images/logo.png
 mv ./templates/routes/routes.rb ./config/routes.rb
 mv ./templates/controllers/application_controller.rb ./app/controllers/application_controller.rb
